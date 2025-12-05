@@ -33,6 +33,12 @@
         margin-bottom: 12em;
     }
 
+    @media screen and (max-width:1200px){
+        .carousl {
+            height: 40%;
+        }
+    }
+
     @media screen and (max-width:990px){
         #miku{
             position: relative;
@@ -56,7 +62,19 @@
         #mobile-menu li a {
             padding-left: 50px;
         }
+        #gallery {
+            margin: 0%;
+        }
     }
+
+    @media screen and (max-width:370px){
+       .carousl {
+        height: 30%;
+        margin-top: -10%;
+        margin-bottom: -5%;
+       }
+    }
+
     .tabs .indicator{
         background-color: #1a237e;
     }
@@ -70,7 +88,6 @@
         <img id="picyup" class="responsive-img" src="img/banner.png" alt="">
         <div id="anime" class="container center-align">
              <h2 style="font-size: 10vw;" id="anime" class="flow-text">OTAKU</h2>
-             <hr>
              <h6 style="font-size: 3vw;" id="yeaboi">Viewer's Pick</h6>
         </div>
         </div>
@@ -133,9 +150,10 @@
 </section>
 </div>
 
-<div class="container center-align">
+<div id="recommendations" class="container center-align">
     <h1 style="font-size: 5vw;" class="flow-text">Recommendations</h1>
     <p style="font-size: 1.1em;">These are animes, mangas, and webnovels I liked! Not listed on any particular order or anything, 'cuz I just pooled some I remembered on top of my head. I probably forgot some though.</p>
+    <br>
 </div>
 
 <section class="hide-on-med-and-down">
@@ -167,7 +185,7 @@
 
     <a href="novel.html">
     <div>
-    <div class="parallax-container">
+    <div style="margin-bottom: 30px;" class="parallax-container">
     <div class="parallax">
         <img style="filter: brightness(50%);" class="responsive-img" src="img/Novel.jpg" alt="">
     </div>
@@ -177,10 +195,11 @@
         </div>
     </div>
     </a>
+    <br>
 </section>
 
 <section class="hide-on-large-only">
-    
+    <div>
     <a href="anime.html">
     <div>
     <img id="freakinboi" style="filter: brightness(50%);" class="responsive-img" src="img/Anime.jpg" alt="">
@@ -198,10 +217,40 @@
     <div>
         <img src="img/Novel.jpg" class="responsive-img" style="filter: brightness(50%);" alt="">
         <div>
-            <h1 id="text-gradient" class="center-align flow-text" style="font-size: 10vw; margin-top: -2.7em; transition: 0.3s;">WEBNOVELS</h1>
+            <h1 id="text-gradient" class="center-align flow-text" style="font-size: 10vw; margin-top: -2.7em; margin-bottom: 2em; transition: 0.3s;">WEBNOVELS</h1>
         </div>
     </div>
+    </div>
+</section>
 
+<!--yeaeepbi-->
+
+<section class="section scrollspy" id="gallery">
+    <br><hr class="hryo"><br><br>
+    <div class="row">
+        
+        <a href="gallery.html">
+        <div class="col s12 l6">
+           <div class="carousl">
+                <div class="group">
+                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        </a>
+
+        <div class="col s12 l4 offset-l1 valign-wrapper">
+            <div style="margin: 5%;">
+            <h2 class="indigo-text text-darken-4">Gallery</h2>
+            <p>Has lots of pictures that are aesthetically pleasing. It's all anime tho.</p>
+            </div>
+            </div>
+        </div>
 </section>
 
     <script src="jquery/jquery-3.3.1.min.js"> </script>

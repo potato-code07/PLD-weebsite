@@ -66,6 +66,12 @@ nav.navcenter ul li a {
     border: none;
     border-top: 5px dashed rgb(255, 174, 0);
 }
+.hrye {
+    margin: 0;
+    padding-top: .5em;
+    border: none;
+    border-top: 10px dashed rgb(255, 174, 0);;
+}
 .miku {
     width: 100%;
 }
@@ -96,4 +102,40 @@ nav.navcenter ul li a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 95%;
+}
+
+.carousl {
+    width: 100%;
+    height: 56%;
+    display: flex;
+    overflow-x: auto;
+}
+.carousl::-webkit-scrollbar {
+    display: none;
+}
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 5s infinite linear;
+    padding-right: 1em;
+    flex-wrap: nowrap;
+}
+.card {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+#gallery {
+    margin: 5%;
 }
