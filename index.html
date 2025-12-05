@@ -28,6 +28,11 @@
         width: 50%;
         overflow: hidden;
     }
+    #adjustable {
+        margin-top: -25em;
+        margin-bottom: 12em;
+    }
+
     @media screen and (max-width:990px){
         #miku{
             position: relative;
@@ -35,20 +40,21 @@
             height: 50%;
             margin: auto;
         }
-
     }
+
     @media screen and (max-width:720px){
         #yeaboi {
             margin-top: -15px;
         }
         #picyup {
             padding: 0;
+            margin-bottom: -.3em;
         }
         #navyo {
             margin-top: 22%;
         }
-        p {
-        font-size: 1.1em;
+        #mobile-menu li a {
+            padding-left: 50px;
         }
     }
     .tabs .indicator{
@@ -63,7 +69,8 @@
         <div>
         <img id="picyup" class="responsive-img" src="img/banner.png" alt="">
         <div id="anime" class="container center-align">
-             <h2 style="font-size: 10vw;" id="anime" class="flow-text">ANIME</h2>
+             <h2 style="font-size: 10vw;" id="anime" class="flow-text">OTAKU</h2>
+             <hr>
              <h6 style="font-size: 3vw;" id="yeaboi">Viewer's Pick</h6>
         </div>
         </div>
@@ -80,13 +87,13 @@
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <ul class="sidenav grey lighten-2" id="mobile-menu">
-                    <li><a href="#">Recommendations</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Icons</a></li>
-            </ul>
         </div>
     </nav>
+    <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Recommendations</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+    </ul>
 </header>
 
 <div>
@@ -96,7 +103,7 @@
     <div class="hide-on-large-only">
         <img id="kitakita" class="responsive-img" src="img/Kita.jpg" alt="">
     </div>
-        <div class="row">
+        <div class="row valign-wrapper">
             <div class="col s12 l4 hide-on-med-and-down">
                 <img id="miku" class="responsive-img" src="img/Miku.jpg" alt="">
             </div>
@@ -126,11 +133,83 @@
 </section>
 </div>
 
+<div class="container center-align">
+    <h1 style="font-size: 5vw;" class="flow-text">Recommendations</h1>
+    <p style="font-size: 1.3em;">These are animes, mangas, and webnovels I liked! Not listed on any particular order or anything, 'cuz I just pooled some I remembered on top of my head. I probably forgot some though.</p>
+</div>
+
+<section class="hide-on-med-and-down">
+    <a href="anime.html">
+    <div>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img style="filter: brightness(50%);" class="responsive-img" src="img/Anime.jpg" alt="">
+            </div>
+        </div>
+        <div id="adjustable" class="container">
+        <h1 id="text-striped" style="font-size: 10vw;" class="center-align flow-text">ANIME</h1>
+        </div>
+    </div>
+    </a>
+
+    <a href="manga.html">
+    <div>
+    <div class="parallax-container">
+    <div class="parallax">
+        <img style="filter: brightness(50%);" class="responsive-img" src="img/Manhwa.jpg" alt="">
+    </div>
+    </div>
+        <div id="adjustable" class="container">
+        <h1 style="-webkit-text-fill-color: transparent; -webkit-text-stroke: 1px rgb(255, 255, 255); font-size: 8vw;" class="center-align flow-text">MANGA/MANHWA</h1>
+        </div>
+    </div>
+    </a>
+
+    <a href="novel.html">
+    <div>
+    <div class="parallax-container">
+    <div class="parallax">
+        <img style="filter: brightness(50%);" class="responsive-img" src="img/Novel.jpg" alt="">
+    </div>
+    </div>
+        <div id="adjustable" class="container">
+        <h1 id="text-gradient" style="font-size: 10vw;" class="center-align flow-text"> WEBNOVELS</h1>
+        </div>
+    </div>
+    </a>
+</section>
+
+<section class="hide-on-large-only">
     
+    <a href="anime.html">
+    <div>
+    <img id="freakinboi" style="filter: brightness(50%);" class="responsive-img" src="img/Anime.jpg" alt="">
+    <h1 id="stripe2" class="center-align flow-text" style="font-size: 20vw;">ANIME</h1>
+    </div>
+    </a>
+    
+    <div>
+        <img src="img/Manhwa.jpg" class="responsive-img" style="filter: brightness(50%);" alt="">
+        <div>
+            <h1 class="center-align flow-text" style="position: relative;-webkit-text-fill-color: transparent; -webkit-text-stroke: .5px rgb(255, 255, 255); font-size: 9vw; margin-top: -3em; margin-bottom: 1.9em; transition: 0.3s;">MANGA/MANHWA</h1>
+        </div>
+    </div>
+    
+    <div>
+        <img src="img/Novel.jpg" class="responsive-img" style="filter: brightness(50%);" alt="">
+        <div>
+            <h1 id="text-gradient" class="center-align flow-text" style="font-size: 10vw; margin-top: -2.7em; transition: 0.3s;">WEBNOVELS</h1>
+        </div>
+    </div>
+
+</section>
+
     <script src="jquery/jquery-3.3.1.min.js"> </script>
     <script src="materialize/js/materialize.min.js"></script>
     <script>
         $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
         $('.parallax').parallax();
         $('.tabs').tabs();
         });

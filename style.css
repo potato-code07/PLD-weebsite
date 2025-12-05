@@ -13,13 +13,17 @@
     src: url(Font/Poppins-Light.ttf);
 }
 
-#titletext {
+p {
+    font-size: 1.1em;
+}
+h1 {
     font-family: 'Thicc';
 }
 
-h1, p, a {
+p, a{
     font-family: 'Thinc';
 }
+
 h2, h3 {
     font-family: 'Thicc';
 }
@@ -42,6 +46,7 @@ h2, h3 {
 ul li a{
     color: black;
     font-family: 'Thinc';
+    font-size: 1.5vw;
 }
 
 nav.navcenter ul {
@@ -55,6 +60,7 @@ nav.navcenter ul li a {
     display: inline-block;
     width: 30%;
 }
+
 .hryo {
     margin: 0;
     border: none;
@@ -62,4 +68,32 @@ nav.navcenter ul li a {
 }
 .miku {
     width: 100%;
+}
+
+#text-striped {
+    background: linear-gradient(rgb(255, 196, 0),rgb(255, 196, 0) 50%, transparent 50%, transparent);
+    background-size: 100% 8px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.3s;
+}
+
+#stripe2{
+    position: relative;
+    margin-top: -2em;
+    margin-bottom: .9em;
+    background: linear-gradient(rgb(255, 196, 0),rgb(255, 196, 0) 50%, transparent 50%, transparent);
+    background-size: 100% 8px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.3s;
+}
+
+#text-gradient {
+    background: linear-gradient(90deg, #00fbff, rgb(217, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 95%;
 }
