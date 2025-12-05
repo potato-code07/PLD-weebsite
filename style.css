@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Thicc';
+    src: url(Font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Thin';
+    src: url(Font/Poppins-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Thinc';
+    src: url(Font/Poppins-Light.ttf);
+}
+
+#titletext {
+    font-family: 'Thicc';
+}
+
+h1, p, a {
+    font-family: 'Thinc';
+}
+h2, h3 {
+    font-family: 'Thicc';
+}
+
+#anime {
+    padding: 0;
+    margin-top: -35%;
+    position: relative;
+    color: white;
+    font-family: 'Thicc';
+}
+
+#yeaboi {
+    font-family: 'Thin';
+}
+
+#navyo {
+    margin-top: 15%;
+}
+ul li a{
+    color: black;
+    font-family: 'Thinc';
+}
+
+nav.navcenter ul {
+    text-align: center;
+}
+nav.navcenter ul li {
+    display: inline;
+    float: none;
+}
+nav.navcenter ul li a {
+    display: inline-block;
+    width: 30%;
+}
+.hryo {
+    margin: 0;
+    border: none;
+    border-top: 5px dashed rgb(255, 174, 0);
+}
+.miku {
+    width: 100%;
+}

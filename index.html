@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weebsite</title>
+    <style>
+    #picyup {
+        filter: brightness(50%);
+        padding: 5%;
+    }
+    #textyo {
+        padding-top: 0;
+    } 
+    #kitakita{
+        border-radius: 15%;
+        border-top-left-radius: 3%;
+    }
+    #miku{
+        border-radius: 10%;
+    }
+    #mikui{
+        height: 100%;
+        width: 50%;
+        overflow: hidden;
+    }
+    @media screen and (max-width:990px){
+        #miku{
+            position: relative;
+            display: block;
+            height: 50%;
+            margin: auto;
+        }
+
+    }
+    @media screen and (max-width:350px){
+        #yeaboi {
+            margin-top: -15px;
+        }
+        #picyup {
+            padding: 0;
+        }
+        #navyo {
+            margin-top: 22%;
+        }
+    }
+    .tabs .indicator{
+        background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+        background-color: transparent;
+    }
+    </style>
+</head>
+<body>
+        <div>
+        <img id="picyup" class="responsive-img" src="img/banner.png" alt="">
+        <div id="anime" class="container center-align">
+             <h2 style="font-size: 10vw;" id="anime" class="flow-text">ANIME</h2>
+             <h6 style="font-size: 3vw;" id="yeaboi">Viewer's Pick</h6>
+        </div>
+        </div>
+
+<header>
+    <nav id="navyo" class="navcenter nav-wrapper transparent z-depth-0">
+        <div class="container">
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons" style="color:black">menu</i>
+                </a>
+            
+            <ul class="hide-on-med-and-down">
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Recommendations</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Icons</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div>
+<section id="textyo" class="section container scrollspy">
+    <hr class="hryo">
+    <br>
+    <div class="hide-on-large-only">
+        <img id="kitakita" class="responsive-img" src="img/Kita.jpg" alt="">
+    </div>
+        <div class="row">
+            <div class="col s12 l4 hide-on-med-and-down">
+                <img id="miku" class="responsive-img" src="img/Miku.jpg" alt="">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <ul class="tabs center-align">
+                    <li class="tab col s6">
+                        <a href="#photography" class="active black-text text-darken-4 center">Definition</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#editing" class="active  black-text text-darken-4">Why anime?</a>
+                    </li>
+                </ul>
+                <div id="photography" class="col s12">
+                    <h1 id="titletext" class="flow-text">What is Anime?</h1>
+                    <p>Anime is a style of animation originating in Japan that is characterized by stark colorful graphics depicting vibrant characters in action-filled plots often with fantastic or futuristic themes.</p>
+                    <p>The earliest commercial Japanese animation dates to 1917. A characteristic art style emerged in the 1960s with the works of cartoonist Osamu Tezuka and spread in the following decades, developing a large domestic audience. In addition to original works, anime are often adaptations of Japanese comics (manga), light novels, or video games. It is classified into numerous genres targeting various broad and niche audiences.</p>
+                </div>
+                <div id="editing" class="col s12">
+                    <h1 id="titletext"   class="flow-text">Why choose Anime?</h1>
+                    <p>Anime takes a lot time to make. Animators take a really long time to draw out a scene and produce an output that can satisfy its intended audience. Not only that, direction and music also play a huge part into the production of this kind of media. Storylines can also be really interesting, and it offers a different kind of entertainment from books, novels, or real-life movies.</p>
+
+                    <p>TLDR: I just really like anime, man.</p>
+                </div>
+            </div>
+        </div>
+    <hr class="hryo">
+</section>
+</div>
+
+    
+    <script src="jquery/jquery-3.3.1.min.js"> </script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        });
+    </script>
+</body>
+</html>
