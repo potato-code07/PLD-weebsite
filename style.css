@@ -158,4 +158,28 @@ nav.navcenter ul li a {
     filter: brightness(50%);
 }
 
+#gallery{
+    background-image: url(img/dastripes2.avif), url(img/dastripes.png), url(img/grid.png), url(img/grid.png);
+    background-size: 15%, 30%, 15%, 15%;
+    background-position: top left, bottom right, top right, bottom left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
+#musicbg{
+    background-image: url(img/pink.jpg), url(img/cyanblue.jpg);
+    background-position: 100% -20%, 70% -5%;
+    background-size: 25%, 10%;
+    background-repeat: no-repeat;
+}
+
+#gallerybg{
+    padding-bottom: 23%;
+    background-image: url(img/yellow.jpg), url(img/yellowgreen.jpg);
+    background-position: 0% 100%, 30% 100%;
+    background-size: 25%, 10%;
+    background-repeat: no-repeat;
+}
+#footer {
+    display: inline-block;
+}

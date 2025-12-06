@@ -37,6 +37,18 @@
         .carousl {
             height: 40%;
         }
+        #gallery{
+        background-image: none;
+        }
+
+        #musicbg{
+        background-image: none;
+        }
+
+        #gallerybg{
+        padding-bottom: 0%;
+        background-image: none;
+    }
     }
 
     @media screen and (max-width:990px){
@@ -104,15 +116,15 @@
             
             <ul class="hide-on-med-and-down">
                 <li><a href="#recommendations">Recommendations</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#gallery">Gallery & Music</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <ul class="sidenav grey lighten-2" id="mobile-menu">
-                    <li><a href="#">Recommendations</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                    <li><a href="#gallery">Gallery & Music</a></li>
+                    <li><a href="#contact">Contact</a></li>
     </ul>
 </header>
 
@@ -233,7 +245,6 @@
 <!--yeaeepbi-->
 
 <section class="section scrollspy" id="gallery">
-    <br><hr class="hryo"><br><br>
     <div class="row">
         
         <a href="gallery.html">
@@ -250,13 +261,19 @@
             </div>
         </div>
         </a>
+
         <div class="col s12 l4 offset-l1">
-            <div style="margin: 5%;">
+            <div id="gallerybg" style="margin: 5%;">
                 <br class="hide-on-med-and-down">
             <h2 id="gallerytext" class="pink-text text-lighten-1 left-align">Gallery</h2>
             <p>Has lots of pictures that are aesthetically pleasing. It's all anime tho.</p>
             </div>
             </div>
+        </div>
+
+        <div class="container z-depth-0">
+            <br class="hide-on-med-and-down">
+            <hr style="border-top: 5px dashed rgb(142, 214, 255);">
         </div>
         
         <div id="bocchi" style="padding: 0;" class="row">
@@ -275,7 +292,7 @@
                     <img style="height: 21em;" id="boccher" src="img/Music5.jpg" class="responsive-img" alt="">
                 </a>
             </div>
-            <div class="col s12 l4 right-align pull-l5">
+            <div id="musicbg" class="col s12 l4 right-align pull-l5">
                 <br class="hide-on-med-and-down">
                 <br class="hide-on-med-and-down">
                 <br class="hide-on-med-and-down">
@@ -283,8 +300,82 @@
                 <p>Has anime music that I like. Please give them a listen heheh.</p>
             </div>
         </div>
-
 </section>
+
+<!-- contract form -->
+    <section class="section container scrollspy" id="contact">
+        <hr class="hryo">
+        <br class="hide-on-med-and-down">
+        <br class="hide-on-med-and-down">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="pink-text">Want to talk about anime?</h2>
+                <p>I really don't know why I placed this log-in thing here, but do ya wanna sign up?</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form>
+                    <br>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">date_range</i>
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">What's the date you sign up?</label>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn pink">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<footer id="daisybg" class="page-footer amber accent-4 center-align">
+    <div style="margin-top:-2%;" class="container">
+        <h2 style="color: rgb(56, 56, 56); font-size: 3vw;" class="flow-text">More Contact Details!</h2>
+        <div class="row">
+            <div class="col s4 m4 l4">
+            <a href="https://www.instagram.com/rhianangelinelalimo/" class="btn-floating btn-small light-blue" >
+                <i class="fab fa-instagram"></i>
+            </a>
+            </div>
+            <div class="col s4 m4 l4">
+            <a href="https://www.facebook.com/didang.lalimo/" class="btn-floating btn-small light-blue">
+                <i class="fab fa-facebook"></i>
+            </a>
+            </div>
+            <div class="col s4 m4 l4">
+            <a href="https://x.com/" class="btn-floating btn-small light-blue">
+                <i class="fab fa-twitter"></i>
+            </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s4 m4 l4">
+            <p style="margin-top: -5%;">Instagram</p>
+            </div>
+            <div class="col s4 m4 l4">
+            <p style="margin-top: -5%;">Facebook</p>
+            </div>
+            <div class="col s4 m4 l4">
+            <p style="margin-top: -5%;">Twitter</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright indigo lighten-1">
+        <div class="container center-align">&copy; 2025 Photo Ninja</div>
+    </div>
+</footer>
 
     <script src="jquery/jquery-3.3.1.min.js"> </script>
     <script src="materialize/js/materialize.min.js"></script>
@@ -294,6 +385,8 @@
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
         $('.tabs').tabs();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
         });
     </script>
 
