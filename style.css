@@ -139,3 +139,23 @@ nav.navcenter ul li a {
 #gallery {
     margin: 5%;
 }
+#gallerytext{
+
+}
+#bocchi {
+    margin-top: 5%;
+}
+#boccher {
+    object-fit: cover;
+}
+#moosictext {
+    margin-top: 25px;
+}
+.carousl:hover {
+    filter: brightness(50%);
+}
+#boccher:hover{
+    filter: brightness(50%);
+}
+
+

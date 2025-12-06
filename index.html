@@ -65,6 +65,9 @@
         #gallery {
             margin: 0%;
         }
+        #boccher {
+            object-fit: cover;
+        }
     }
 
     @media screen and (max-width:370px){
@@ -118,11 +121,11 @@
     <hr class="hryo">
     <br>
     <div class="hide-on-large-only">
-        <img id="kitakita" class="responsive-img" src="img/Kita.jpg" alt="">
+        <img id="kitakita" class="responsive-img materialboxed" src="img/Kita.jpg" alt="">
     </div>
         <div class="row valign-wrapper">
             <div class="col s12 l4 hide-on-med-and-down">
-                <img id="miku" class="responsive-img" src="img/Miku.jpg" alt="">
+                <img id="miku" class="responsive-img materialboxed" src="img/Miku.jpg" alt="">
             </div>
             <div class="col s12 l6 offset-l1">
                 <ul class="tabs center-align">
@@ -247,14 +250,40 @@
             </div>
         </div>
         </a>
-
-        <div class="col s12 l4 offset-l1 valign-wrapper">
+        <div class="col s12 l4 offset-l1">
             <div style="margin: 5%;">
-            <h2 class="indigo-text text-darken-4">Gallery</h2>
+                <br class="hide-on-med-and-down">
+            <h2 id="gallerytext" class="pink-text text-lighten-1 left-align">Gallery</h2>
             <p>Has lots of pictures that are aesthetically pleasing. It's all anime tho.</p>
             </div>
             </div>
         </div>
+        
+        <div id="bocchi" style="padding: 0;" class="row">
+            <div class="col s4 l2 push-l6">
+                <a href="music.html">
+                    <img style="height: 25em;" id="boccher" src="img/Music5.jpg" class="responsive-img" alt="">
+                </a>
+            </div>
+            <div class="col s4 l2 push-l6">
+                <a href="music.html">
+                    <img style="height: 23em;" id="boccher" src="img/Music5.jpg" class="responsive-img" alt="">
+                </a>
+            </div>
+            <div class="col s4 l2 push-l6">
+                <a href="music.html">
+                    <img style="height: 21em;" id="boccher" src="img/Music5.jpg" class="responsive-img" alt="">
+                </a>
+            </div>
+            <div class="col s12 l4 right-align pull-l5">
+                <br class="hide-on-med-and-down">
+                <br class="hide-on-med-and-down">
+                <br class="hide-on-med-and-down">
+                <h1 id="moosictext" class="green-text text-lighten-1">Music</h1>
+                <p>Has anime music that I like. Please give them a listen heheh.</p>
+            </div>
+        </div>
+
 </section>
 
     <script src="jquery/jquery-3.3.1.min.js"> </script>
