@@ -1,10 +1,104 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Attack on Titan</title>
+    <style>
+        body {
+            background-image: url(img/redbg2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        #titlecover {
+            max-width: 45%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 10px solid rgb(255, 255, 255, 0.8);
+        }
+        #coverdiv {
+            margin-top: 5%;
+        }
+        #h1{
+            font-size: 4em;
+        }
+        #synopsis {
+            background-color: rgb(255, 255, 255, 0.7);
+            padding: 5%;
+        }
+        #vid {
+            max-width: 75%; border: 10px solid rgb(255, 255, 255, 0.8); border-radius: 20px; margin-bottom: 3%;}
+        @media screen and (max-width:720px){
+           #h1{
+                font-size: 2em;
+            }
+            #titlecover {
+            max-width: 75%;
+            height: auto;
+            object-fit: cover;
+            }
+            p {
+            font-size: 1.2em;
+        }
+        #vid {
+                max-width: 90%; 
+                border: 3px solid rgb(255, 255, 255, 0.8); 
+                border-radius: 20px; margin-bottom: 3%;
+        }
+        }
+    </style>
 </head>
 <body>
-    
+
+<section class="container">
+    <div id="coverdiv" class="container center-align">
+        <img id="titlecover" class="responsive-img" src="img/Attack_on_Titan_Season_1.webp" alt="">
+        <h1 id="h1" class="flow-text white-text">[Attack on Titan]</h1>
+    </div>
+</section>
+
+<section>
+<div id="synopsis" class="container">
+    <h1 id="h1">Synopsis:</h1>
+    <p >Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.[Written by MAL Rewrite]</p>
+</div>
+</section>
+
+<div class="container center-align">
+    <h1 style="text-decoration: underline;" id="h1" class="white-text left-align">Trailer:</h1>
+    <video id="vid" controls src="video/Attack on Titan Season 1 Trailer.mp4"></video>
+</div>
+
+<section style="margin-bottom: 5%;">
+<div id="synopsis" class="container">
+    <h1 id="h1">Personal Review(Spoilers!):</h1>
+    <p>I was a little scared of watching this anime at first, so I didn't expect it to become one of my favorite animes of all time. The concept is really unique, even if others might say that the anime itself looks like flesh mecha. It's not just flesh mecha.  It really did change when they weren't just attacking titans anymore. Heh. Get it? Attacking titans? <br> <br> Still, the plot twists, the world building, the interesting charactes and the feeling that the story is unpredictable was really good. As one internet commenter once said, they really did go from saving Eren to having Eren save them, and then saving themselves from Eren at the end. Sheesh.</p>
+</div>
+</section>
+
+
+
+
+    <script src="jquery/jquery-3.3.1.min.js"> </script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        $('.datepicker').datepicker({
+            });
+        });
+    </script>
 </body>
 </html>

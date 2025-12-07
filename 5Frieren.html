@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Frieren</title>
+    <style>
+        body {
+            background-image: url(img/redbg2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        #titlecover {
+            max-width: 45%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 10px solid rgb(255, 255, 255, 0.8);
+        }
+        #coverdiv {
+            margin-top: 5%;
+        }
+        #h1{
+            font-size: 4em;
+        }
+        #synopsis {
+            background-color: rgb(255, 255, 255, 0.7);
+            padding: 5%;
+        }
+        #vid {
+            max-width: 75%; border: 10px solid rgb(255, 255, 255, 0.8); border-radius: 20px; margin-bottom: 3%;}
+        @media screen and (max-width:720px){
+           #h1{
+                font-size: 2em;
+            }
+            #titlecover {
+            max-width: 75%;
+            height: auto;
+            object-fit: cover;
+            }
+            p {
+            font-size: 1.2em;
+        }
+        #vid {
+                max-width: 90%; 
+                border: 3px solid rgb(255, 255, 255, 0.8); 
+                border-radius: 20px; margin-bottom: 3%;
+        }
+        }
+    </style>
+</head>
+<body>
+
+<section class="container">
+    <div id="coverdiv" class="container center-align">
+        <img id="titlecover" class="responsive-img" src="img/Frieren" alt="">
+        <h1 id="h1" class="flow-text white-text">[Frieren]</h1>
+    </div>
+</section>
+
+<section>
+<div id="synopsis" class="container">
+    <h1 id="h1">Synopsis:</h1>
+    <p>During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them.
+    <br><br>
+    However, the time that Frieren spends with her comrades is equivalent to merely a fraction of her life, which has lasted over a thousand years. When the party disbands after their victory, Frieren casually returns to her "usual" routine of collecting spells across the continent. Due to her different sense of time, she seemingly holds no strong feelings toward the experiences she went through.
+    <br><br>
+    As the years pass, Frieren gradually realizes how her days in the hero's party truly impacted her. Witnessing the deaths of two of her former companions, Frieren begins to regret having taken their presence for granted; she vows to better understand humans and create real personal connections. Although the story of that once memorable journey has long ended, a new tale is about to begin.[Written by MAL Rewrite]</p>
+</div>
+</section>
+
+<div class="container center-align">
+    <h1 style="text-decoration: underline;" id="h1" class="white-text left-align">Trailer:</h1>
+    <video id="vid" controls src="video/Frieren_ Beyond Journey's End _ Official Trailer _ Netflix.mp4"></video>
+</div>
+
+<section style="margin-bottom: 5%;">
+<div id="synopsis" class="container">
+    <h1 id="h1">Personal Review(Spoilers!):</h1>
+    <p>This is another top-tier anime. The animation is superb, and I love the vibes of the protagonist. I've never seen an elf protagonist before. And the fact that the journey starts right after the end of the subjugation of the demon king? Never seen that, man. The way the anime reminisces, it's like we're tracing the adventure back like an old tape. <br><br> Love Frieren, the cutest grandma in anime.</p>
+</div>
+</section>
+
+
+
+
+    <script src="jquery/jquery-3.3.1.min.js"> </script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        $('.datepicker').datepicker({
+            });
+        });
+    </script>
+</body>
+</html>

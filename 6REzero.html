@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ReZero</title>
+    <style>
+        body {
+            background-image: url(img/redbg2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        #titlecover {
+            max-width: 45%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 10px solid rgb(255, 255, 255, 0.8);
+        }
+        #coverdiv {
+            margin-top: 5%;
+        }
+        #h1{
+            font-size: 4em;
+        }
+        #synopsis {
+            background-color: rgb(255, 255, 255, 0.7);
+            padding: 5%;
+        }
+        #vid {
+            max-width: 75%; border: 10px solid rgb(255, 255, 255, 0.8); border-radius: 20px; margin-bottom: 3%;}
+        @media screen and (max-width:720px){
+           #h1{
+                font-size: 2em;
+            }
+            #titlecover {
+            max-width: 75%;
+            height: auto;
+            object-fit: cover;
+            }
+            p {
+            font-size: 1.2em;
+        }
+        #vid {
+                max-width: 90%; 
+                border: 3px solid rgb(255, 255, 255, 0.8); 
+                border-radius: 20px; margin-bottom: 3%;
+        }
+        }
+    </style>
+</head>
+<body>
+
+<section class="container">
+    <div id="coverdiv" class="container center-align">
+        <img id="titlecover" class="responsive-img" src="img/Rezero.webp" alt="">
+        <h1 id="h1" class="flow-text white-text">[RE:Zero]</h1>
+    </div>
+</section>
+
+<section>
+<div id="synopsis" class="container">
+    <h1 id="h1">Synopsis:</h1>
+    <p>When Subaru Natsuki leaves the convenience store, the last thing he expects is to be wrenched from his everyday life and dropped into a fantasy world. Things are not looking good for the bewildered teenager; however, not long after his arrival, he is attacked by some thugs. Armed with only a bag of groceries and a now useless cell phone, he is quickly beaten to a pulp. Fortunately, a mysterious beauty named Satella, in hot pursuit after the one who stole her insignia, happens upon Subaru and saves him. In order to thank the honest and kindhearted girl, Subaru offers to help in her search, and later that night, he even finds the whereabouts of that which she seeks. But unbeknownst to them, a much darker force stalks the pair from the shadows, and just minutes after locating the insignia, Subaru and Satella are brutally murdered.
+    <br><br>
+    However, Subaru immediately reawakens to a familiar scene—confronted by the same group of thugs, meeting Satella all over again—the enigma deepens as history inexplicably repeats itself.[Written by MAL Rewrite]</p>
+</div>
+</section>
+
+<div class="container center-align">
+    <h1 style="text-decoration: underline;" id="h1" class="white-text left-align">Trailer:</h1>
+    <video id="vid" controls src="video/Re_Zero (Official Trailer).mp4"></video>
+</div>
+
+<section style="margin-bottom: 5%;">
+<div id="synopsis" class="container">
+    <h1 id="h1">Personal Review(Spoilers!):</h1>
+    <p>This is when the main character doesn't get treated like a hero main character. Bro really can't take a break. It's like he trying to clear all levels of dumb ways to die without even meaning to. Still, the world-building is solid. The thing that really pushes me to watch this is how crazy the characters are, how different actions of the main character, Subaru, give unexpected consequences. How the characters change on different timelines, too. <br><br>This anime is a rollercoaster. Still, we love Emilia.</p>
+</div>
+</section>
+
+
+
+
+    <script src="jquery/jquery-3.3.1.min.js"> </script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        $('.datepicker').datepicker({
+            });
+        });
+    </script>
+</body>
+</html>
