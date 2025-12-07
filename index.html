@@ -66,10 +66,16 @@
         }
         #picyup {
             padding: 0;
-            margin-bottom: -.3em;
+        }
+        #anime {
+            font-size: 18vw;
+            margin-top: -2em;
         }
         #navyo {
-            margin-top: 22%;
+            margin-top: 15%;
+        }
+        #recc {
+            font-size: 7vw;
         }
         #mobile-menu li a {
             padding-left: 50px;
@@ -80,14 +86,23 @@
         #boccher {
             object-fit: cover;
         }
+        #contacteu {
+            font-size: 10vw;
+        }
+        #daisybg {
+            padding-top: 3%;
+        }
+        #topyo {
+            background-image: none;
+        }
     }
 
     @media screen and (max-width:370px){
        .carousl {
         height: 30%;
-        margin-top: -10%;
         margin-bottom: -5%;
        }
+
     }
 
     .tabs .indicator{
@@ -99,10 +114,10 @@
     </style>
 </head>
 <body>
-        <div>
+        <div id="topyo">
         <img id="picyup" class="responsive-img" src="img/banner.png" alt="">
         <div id="anime" class="container center-align">
-             <h2 style="font-size: 10vw;" id="anime" class="flow-text">OTAKU</h2>
+             <h2 id="anime" class="flow-text">OTAKU</h2>
              <h6 style="font-size: 3vw;" id="yeaboi">Viewer's Pick</h6>
         </div>
         </div>
@@ -149,14 +164,17 @@
                     </li>
                 </ul>
                 <div id="photography" class="col s12">
-                    <h1 id="titletext" class="flow-text">What is Anime?</h1>
+                    <h1 id="titletext" class="pink-text flow-text">What is Anime?</h1>
                     <p>Anime is a style of animation originating in Japan that is characterized by stark colorful graphics depicting vibrant characters in action-filled plots often with fantastic or futuristic themes.</p>
-                    <p>The earliest commercial Japanese animation dates to 1917. A characteristic art style emerged in the 1960s with the works of cartoonist Osamu Tezuka and spread in the following decades, developing a large domestic audience. In addition to original works, anime are often adaptations of Japanese comics (manga), light novels, or video games. It is classified into numerous genres targeting various broad and niche audiences.</p>
+                    <h1 id="titletext" class="amber-text flow-text">What is Manga?</h1>
+                    <p>Manga is a style of Japanese comic books and graphic novels, typically aimed at adults as well as children.</p>
+                     <h1 id="titletext" class="light-green-text flow-text">What is a Webnovel?</h1>
+                    <p>A form of novel written online, or on the "web".</p>
                 </div>
                 <div id="editing" class="col s12">
-                    <h1 id="titletext"   class="flow-text">Why choose Anime?</h1>
-                    <p>Anime takes a lot time to make. Animators take a really long time to draw out a scene and produce an output that can satisfy its intended audience. Not only that, direction and music also play a huge part into the production of this kind of media. Storylines can also be really interesting, and it offers a different kind of entertainment from books, novels, or real-life movies.</p>
-
+                    <h1 id="titletext"   class="blue-text flow-text">Why choose Anime?</h1>
+                    <p>I've always loved wathching anime. My brother introduced it to me with the first ever anime I've ever watched: Shakugan No Shana. Since then, I've dug and dug into several animes, junkfood and masterpieces alike. Now, I don't remember like half of them, and I've stopped digging around and only watch mainstream anime.</p>
+                    <p>Now, I'm more into reading Webnovels and reading Manhwas and Mangas, only occasionally checking in for interesting animes for the season. Still, I find myself rewatching some anime I liked. Even some trashy isekais. I love trashy isekais.</p>
                     <p>TLDR: I just really like anime, man.</p>
                 </div>
             </div>
@@ -166,12 +184,12 @@
 </div>
 
 <div id="recommendations" class="container center-align">
-    <h1 style="font-size: 5vw;" class="flow-text">Recommendations</h1>
+    <h1 id="recc" class="flow-text">Recommendations</h1>
     <p style="font-size: 1.1em;">These are animes, mangas, and webnovels I liked! Not listed on any particular order or anything, 'cuz I just pooled some I remembered on top of my head. I probably forgot some though.</p>
     <br>
 </div>
 
-<section class="hide-on-med-and-down">
+<section id="nonparallax" class="hide-on-med-and-down">
     <a href="anime.html">
     <div>
         <div class="parallax-container">
@@ -242,6 +260,11 @@
     </div>
 </section>
 
+<div class="container">
+    <br class="hide-on-med-and-down">
+    <br class="hide-on-med-and-down">
+    <hr class="hryo">
+</div>
 <!--yeaeepbi-->
 
 <section class="section scrollspy" id="gallery">
@@ -251,12 +274,12 @@
         <div class="col s12 l6">
            <div class="carousl">
                 <div class="group">
-                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
-                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
-                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
-                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
-                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
-                    <img id="card" class="responsive-img" src="img/Anime.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/car8.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/car8.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/car8.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/car8.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/car8.jpg" alt="">
+                    <img id="card" class="responsive-img" src="img/car8.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -340,7 +363,7 @@
 
 <footer id="daisybg" class="page-footer amber accent-4 center-align">
     <div style="margin-top:-2%;" class="container">
-        <h2 style="color: rgb(56, 56, 56); font-size: 3vw;" class="flow-text">More Contact Details!</h2>
+        <h2 id="contacteu" style="color: rgb(56, 56, 56);" class="flow-text">More Contact Details!</h2>
         <div class="row">
             <div class="col s4 m4 l4">
             <a href="https://www.instagram.com/rhianangelinelalimo/" class="btn-floating btn-small light-blue" >
@@ -373,7 +396,7 @@
     </div>
 
     <div class="footer-copyright indigo lighten-1">
-        <div class="container center-align">&copy; 2025 Photo Ninja</div>
+        <div class="container center-align">&copy; 2025 Anime Weebsite heheh</div>
     </div>
 </footer>
 
@@ -387,6 +410,8 @@
         $('.tabs').tabs();
         $('.tooltipped').tooltip();
         $('.scrollspy').scrollSpy();
+        $('.datepicker').datepicker({
+            });
         });
     </script>
 

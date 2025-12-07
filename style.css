@@ -30,6 +30,7 @@ h2, h3 {
 
 #anime {
     padding: 0;
+    font-size: 10vw;
     margin-top: -35%;
     position: relative;
     color: white;
@@ -120,7 +121,6 @@ nav.navcenter ul li a {
     gap: 1em;
     animation: spin 5s infinite linear;
     padding-right: 1em;
-    flex-wrap: nowrap;
 }
 .card {
     flex: 0 0 5em;
@@ -182,4 +182,19 @@ nav.navcenter ul li a {
 }
 #footer {
     display: inline-block;
+}
+#recc {
+    font-size: 5vw;
+}
+
+#contacteu {
+    font-size: 3vw;
+}
+
+#topyo {
+    background-image: url(img/grid.png), url(img/dastripes2.avif), url(img/xicon.png), url(img/xicon2.png), url(img/xicon3.png), url(img/paperplanes.png), url(img/cyanblue.jpg);
+    background-size: 25%, 20%, 7%, 15%, 10%, 20%, 25%;
+    background-position: top left, center right, -3%,top right, 20% 0%, 50% 0%, -28% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
