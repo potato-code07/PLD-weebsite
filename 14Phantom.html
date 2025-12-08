@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Phantom of the Idol</title>
+    <style>
+        body {
+            background-image: url(img/redbg2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        #titlecover {
+            max-width: 45%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 10px solid rgb(255, 255, 255, 0.8);
+        }
+        #coverdiv {
+            margin-top: 5%;
+        }
+        #h1{
+            font-size: 4em;
+        }
+        #synopsis {
+            background-color: rgb(255, 255, 255, 0.7);
+            padding: 5%;
+        }
+        #vid {
+            max-width: 75%; border: 10px solid rgb(255, 255, 255, 0.8); border-radius: 20px; margin-bottom: 3%;}
+        @media screen and (max-width:720px){
+           #h1{
+                font-size: 2em;
+            }
+            #titlecover {
+            max-width: 75%;
+            height: auto;
+            object-fit: cover;
+            }
+            p {
+            font-size: 1.2em;
+        }
+        #vid {
+                max-width: 90%; 
+                border: 3px solid rgb(255, 255, 255, 0.8); 
+                border-radius: 20px; margin-bottom: 3%;
+        }
+        }
+    </style>
+</head>
+<body>
+
+<section class="container">
+    <div id="coverdiv" class="container center-align">
+        <img id="titlecover" class="responsive-img" src="img/KamiKuzu.jpg" alt="">
+        <h1 id="h1" class="flow-text white-text">[Phantom of the Idol]</h1>
+    </div>
+</section>
+
+<section>
+<div id="synopsis" class="container">
+    <h1 id="h1">Synopsis:</h1>
+    <p>Kazuki Yoshino and Yuuya Niyodo are idols who make up the duo ZINGS. While Kazuki gives his all in every performance, Yuuya views the job as just another means of making money. Yuuya's apathetic attitude toward the fans and inability to take his job seriously causes his manager to give him an ultimatum: unless he starts putting in more effort, he will be fired.
+    <br><br>
+    Backstage, Yuuya meets Asahi Mogami, an idol dressed in a colorful costume. Asahi would have had a bright future ahead of her—had she not died a year prior. Even as a ghost, Asahi wants nothing more than to perform for fans again. When she finds out that Yuuya does not hold the same passion for the idol life that she once did, she is overcome by a fit of rage and demands that he let her take his place. In a strange twist, Yuuya wakes up to find that Asahi has possessed him and can do what he is too lazy to do himself.
+    <br><br>
+    With Asahi performing for him, Yuuya thinks he has a ticket to an easy idol life. However, Asahi has other plans. Though she is no longer alive, she wishes for Yuuya to find the ambition that she still has. Together, she wants them to become the best idol the world has ever seen. But can an unmotivated man like Yuuya ever care about anything besides money? [Written by MAL Rewrite]</p>
+
+</div>
+</section>
+
+<div class="container center-align">
+    <h1 style="text-decoration: underline;" id="h1" class="white-text left-align">Trailer:</h1>
+    <video id="vid" controls src="video/Phantom of the Idol Official Trailer.mp4"></video>
+</div>
+
+<section style="margin-bottom: 5%;">
+<div id="synopsis" class="container">
+    <h1 id="h1">Personal Review(Spoilers!):</h1>
+    <p>As you can tell from the synopsis, the concept is freakin hilarious. I just stumbled on it on accident and was obsessed with it for a while. I was seriously wondering why no one else was watching it, then I took a look back at the CG dances and understood. Seriously, the CG isn't that bad, and the songs are pretty good too. It's not Bang Dream level production, but the story is hilarious and makes up for it. Maybe it was the marketing. Or maybe it's really popular in Japan and I've just been missing out on content.
+    <br><br> 
+    I really like Niyodo, the main character, because he's like living his life on battery-saving mode and is a capitalist swine. He has a pretty trashy personality, but he has his moments too. Probably. 
+    <br><br>
+    This one is a guilty pleasure up to my taste so maybe not everyone will like it, but if you'd like please give it a try!</p>
+</div>
+</section>
+
+
+    <script src="jquery/jquery-3.3.1.min.js"> </script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        $('.datepicker').datepicker({
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Containment Zone Management</title>
+    <style>
+        body {
+            background-image: url(img/bgmanga.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        #titlecover {
+            max-width: 45%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 10px solid rgb(255, 255, 255, 0.8);
+        }
+        #coverdiv {
+            margin-top: 5%;
+        }
+        #h1{
+            font-size: 4em;
+        }
+        #synopsis {
+            background-color: rgb(255, 255, 255, 0.7);
+            padding: 5%;
+        }
+        #vid {
+            max-width: 75%; border: 10px solid rgb(255, 255, 255, 0.8); border-radius: 20px; margin-bottom: 3%;}
+        @media screen and (max-width:720px){
+           #h1{
+                font-size: 2em;
+            }
+            #titlecover {
+            max-width: 75%;
+            height: auto;
+            object-fit: cover;
+            }
+            p {
+            font-size: 1.2em;
+        }
+        #vid {
+                max-width: 90%; 
+                border: 3px solid rgb(255, 255, 255, 0.8); 
+                border-radius: 20px; margin-bottom: 3%;
+        }
+        }
+    </style>
+</head>
+<body>
+
+<section class="container">
+    <div id="coverdiv" class="container center-align">
+        <img id="titlecover" class="responsive-img" src="img/manga/containment.webp" alt="">
+        <h1 id="h1" class="flow-text white-text">[Containment Zone Management]</h1>
+    </div>
+</section>
+
+<section>
+<div id="synopsis" class="container">
+    <h1 id="h1">Synopsis:</h1>
+    <p>Welcome to the Containment Zone, where every space is warped by anomalies and bound by deadly rules. From unholy hospitals to sinister arcades, the four-man team of Department 2 ventures in daily to study the spaces and bring back supplies. Things are always guaranteed to get bizarre, but the job has to be done... no matter how many deaths it causes. [Webtoon]</p>
+</div>
+</section>
+
+<br><br>
+
+<section>
+<div id="synopsis" class="container">
+    <h1 id="h1">Where to Read?</h1>
+    <p>You can read this manhwa <a style="color: rgb(201, 0, 90); text-decoration: underline;" href="https://www.webtoons.com/en/sf/containment-zone-management/list?title_no=8376"><b>here</b></a>.</p>
+</div>
+</section>
+
+<br><br>
+
+<section style="margin-bottom: 5%;">
+<div id="synopsis" class="container">
+    <h1 id="h1">Personal Review:</h1>
+    <p>This one is leaning towards SCPs and liminal space and lethal company stuff. Really cool concept and interesting characters. Sometimes I'm pretty clueless as to what is happening, but as long as BB is there, I'll read.</p>
+</div>
+</section>
+
+
+    <script src="jquery/jquery-3.3.1.min.js"> </script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        $('.datepicker').datepicker({
+            });
+        });
+    </script>
+</body>
+</html>

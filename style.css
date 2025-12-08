@@ -84,6 +84,7 @@ nav.navcenter ul li a {
     -webkit-background-clip: text;
     color: transparent;
     transition: 0.3s;
+    margin-bottom: -.4%;
 }
 
 #stripe2{
